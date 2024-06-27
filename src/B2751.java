@@ -6,6 +6,7 @@ public class B2751 {
     public static void main(String[] args)throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
         int count = Integer.parseInt(br.readLine());
 
         ArrayList<Integer> num = new ArrayList<>();
@@ -13,9 +14,9 @@ public class B2751 {
             num.add(Integer.parseInt(br.readLine()));
         }
         Collections.sort(num);
-        Integer[] arr = num.toArray(new Integer[num.size()]);
         for(int i = 0; i < count; i++){
-            System.out.println(arr[i]);
+            sb.append(num.get(i)).append("\n");
         }
+        System.out.println(sb);
     }
 }
