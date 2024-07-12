@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+//
 public class B15439 {
     public static int result(int n){
         return n * (n - 1);
